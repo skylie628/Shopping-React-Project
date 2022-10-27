@@ -32,9 +32,10 @@ const Cart = props => {
                 orderedItems: cartctx.items,
             }) 
         }) ;
-        setIsSubmitting(false);
-        setDidSubmit(true);
-        cartctx.clearCart();
+        setIsSubmitting(false)
+        setDidSubmit(true)
+
+        console.log('post done');
     }
     const cartItems =(
         <ul className = {classes['cart-items']}>
